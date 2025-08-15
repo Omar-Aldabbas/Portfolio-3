@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A personal portfolio website built with **React**, **TailwindCSS**, and **React Router**, showcasing projects, certifications, and contact information.
+A personal portfolio website built with **React** and **React Router**, showcasing projects, certifications, and contact information.
 
 ## Table of Contents
 
