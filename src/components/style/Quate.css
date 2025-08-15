@@ -1,0 +1,121 @@
+.idk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 3rem 0;
+  padding: 5rem 0;
+}
+
+.quote-section {
+  position: relative;
+  display: inline-block;
+  max-width: 90%;
+  width: 100%;
+}
+
+.quote-text {
+  position: relative;
+  padding: 2rem 5rem;
+  margin: 0 auto;
+  border: 3px solid var(--gr);
+  border-radius: 0;
+  font-size: 2rem;
+  color: var(--foreground);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.quote-author {
+  position: absolute;
+  /* bottom: -3rem; */
+  right: 0;
+  margin: 0;
+  padding: 1rem 2rem;
+  border: 3px solid var(--gr);
+  border-top: none;
+  font-size: 1.5rem;
+  color: var(--foreground);
+  background: var(--bg);
+}
+
+.quote-text::before {
+  content: "“";
+  position: absolute;
+  top: -2rem;
+  left: 0.5rem;
+  font-size: 6rem;
+  color: var(--gr);
+}
+
+.quote-text::after {
+  content: "”";
+  position: absolute;
+  bottom: -5rem;
+  right: 0.5rem;
+  font-size: 6rem;
+  color: var(--gr);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .quote-text {
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+  }
+
+  .quote-text::before {
+    top: -1.5rem;
+    left: 0.3rem;
+    font-size: 5rem;
+  }
+
+  .quote-text::after {
+    bottom: -4rem;
+    right: 0.3rem;
+    font-size: 5rem;
+  }
+
+  .quote-author {
+    /* bottom: -2.5rem; */
+    font-size: 1.3rem;
+    padding: 0.8rem 1.5rem;
+  }
+    .idk {
+  height: 70vh;
+  margin:  5px;
+  padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-text {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .quote-text::before {
+    top: -1rem;
+    left: 0.2rem;
+    font-size: 4rem;
+  }
+
+  .quote-text::after {
+    bottom: -3rem;
+    right: 0.2rem;
+    font-size: 4rem;
+  }
+
+  .quote-author {
+    /* bottom: -2rem; */
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+  }
+  .idk {
+  margin:  35px;
+  padding: 5px;
+  }
+}

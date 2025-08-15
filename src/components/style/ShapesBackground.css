@@ -1,0 +1,42 @@
+.background-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -100; 
+}
+
+.falling-symbol {
+  position: absolute;
+  top: -50px;
+  opacity: 0;
+  font-weight: bold;
+  text-shadow: 0 0 6px currentColor, 0 0 12px currentColor;
+  animation-name: fallTechno;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fallTechno {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(50vh) rotate(100deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+}

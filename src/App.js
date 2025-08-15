@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { ShapesBackground } from "./components/ShapesBackground";
+import { Home } from "./pages/Home";
+import { Aboutme } from "./pages/About";
+import { ProjectsPage } from "./pages/Projects";
+import { Contactme } from "./pages/Contact";
+import { NotFoundPage } from "./pages/NotFound";
+import { Navbar } from "./components/Navbar";
+import { Toaster } from "react-hot-toast";
+import { Footer } from "./components/Footer";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ShapesBackground />
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Aboutme />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<Contactme />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+      <Toaster position="top-center" reverseOrder={false} />
+      <Footer />
+    </BrowserRouter>
   );
 }
 

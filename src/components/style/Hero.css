@@ -1,0 +1,51 @@
+.right {
+  display: flex;
+  max-width: 50%;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.left img {
+  max-width: 100%;
+}
+
+.btn {
+  max-width: fit-content;
+}
+
+.underText {
+  border: 1px solid var(--gr);
+  padding: 10px;
+}
+
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 500;
+  color: var(--foreground);
+  /* padding-top: 30px; */
+}
+
+.arrow-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+
