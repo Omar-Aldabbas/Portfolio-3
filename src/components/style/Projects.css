@@ -30,7 +30,7 @@ section#projects {
 }
 
 .line {
-  width: 40rem;
+  width: 32rem;
   height: 1px;
   background-color: var(--primary);
 }
