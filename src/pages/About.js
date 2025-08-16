@@ -5,7 +5,7 @@ import { Testimonials } from "../components/Testimonials";
 export const Aboutme = () => {
   return (
     <div>
-      <About />
+      <About showbutton={false}/>
       <Testimonials />
       <Skills
         showImages={false}

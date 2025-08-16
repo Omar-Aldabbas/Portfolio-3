@@ -20,7 +20,7 @@ export const Home = () => {
       {/* skills */}
         <Skills/>
       {/* about me  */}
-        <About/>
+        <About showbutton={true}/>
       {/* contactme */}
         <Contact showForm={false} />
       {/* footer */}

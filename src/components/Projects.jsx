@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "lucide-react";
 import "./style/Projects.css";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -72,9 +73,9 @@ export const Projects = ({ limit }) => {
         </div>
 
         {limit && (
-          <a href="/projects" className="view-all" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <Link href="/projects" className="view-all" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             view all <ArrowRightIcon size={20} />
-          </a>
+          </Link>
         )}
       </div>
 

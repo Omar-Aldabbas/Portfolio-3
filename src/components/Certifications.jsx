@@ -1,4 +1,5 @@
 import { ArrowRightIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const certifications = [
   {
@@ -73,13 +74,13 @@ export const Certifications = ({ limit }) => {
         </div>
 
         {limit && (
-          <a
+          <Link
             href="/certifications"
             className="view-all"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             view all <ArrowRightIcon size={20} />
-          </a>
+          </Link>
         )}
       </div>
 

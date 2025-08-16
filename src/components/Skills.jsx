@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from "lucide-react";
 import "./style/Skills.css";
+import { Link } from "react-router-dom";
 
 
 export const Skills = ({ showImages = true, skillsData = [], showViewAll = true }) => {
@@ -24,9 +25,9 @@ export const Skills = ({ showImages = true, skillsData = [], showViewAll = true 
           <div className="line"></div>
         </div>
          {showViewAll && (
-        <a href="/about" className="view-all" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <Link href="/about" className="view-all" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           view all <ArrowRightIcon size={20} />
-        </a> )}
+        </Link> )}
       </div>
 
       <div className="outer-grid">

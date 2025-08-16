@@ -1,5 +1,6 @@
 import { ArrowDownIcon, SquareAsteriskIcon } from "lucide-react";
 import "./style/Hero.css";
+import { Link } from "react-router-dom";
 export const Hero = () => {
   return (
     <section id="home">
@@ -12,15 +13,15 @@ export const Hero = () => {
           <p>
             He crafts responsive websites where technologies meet creativity
           </p>
-          <a href="/contact" className="primary-button btn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <Link href="/contact" className="primary-button btn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             Contact me!!
-          </a>
+          </Link>
         </div>
 
         <div className="left">
           <img
             src={`${process.env.PUBLIC_URL}/images/first.png`}
-            alt="First Image"
+            alt="Hero-Image"
           />
           <h4 className="underText">
             <SquareAsteriskIcon className="primary-text" size={18} /> Currently

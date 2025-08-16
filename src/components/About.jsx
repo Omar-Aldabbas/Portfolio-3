@@ -1,7 +1,10 @@
 import { ArrowRight } from "lucide-react";
 import "./style/About.css";
+import { Link } from "react-router-dom";
+// import { useState } from "react";
 
-export const About = () => {
+
+export const About = ({showbutton}) => {
   return (
     <section id="about-me">
       <div className="fix">
@@ -27,9 +30,9 @@ export const About = () => {
               delight users and drive results. Collaboration, curiosity, and
               continuous learning guide every project I take on.
             </p>
-            <a href="/about" className="button-cosmic" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+            {showbutton && <Link href="/about" className="button-cosmic" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
               Read More <ArrowRight />
-            </a>
+            </Link>}
           </div>
         </div>
 
