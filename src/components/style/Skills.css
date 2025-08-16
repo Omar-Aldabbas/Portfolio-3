@@ -3,10 +3,11 @@
   max-height: 100vh;
   margin: 3rem 0;
   /* margin-bottom: 6rem; */
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .outer-grid {
@@ -140,7 +141,9 @@
 @media (max-width: 750px) {
   .outer-grid {
     grid-template-columns: 1fr;
+    z-index: -1000;
     gap: 2rem;
+    position:relative;
   }
 
   .right-col {
@@ -148,6 +151,7 @@
   }
 
   .inner-grid {
+
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
   }
@@ -161,6 +165,9 @@
 
   .left-col {
     height: 50vh; 
+        /* display: none; */
+    position: absolute;
+    z-index: -1000;
   }
 
   .floating-img {
