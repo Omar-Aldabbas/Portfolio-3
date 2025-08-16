@@ -13,7 +13,7 @@ export const Hero = () => {
           <p>
             He crafts responsive websites where technologies meet creativity
           </p>
-          <Link href="/contact" className="primary-button btn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <Link to="/contact" className="primary-button btn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             Contact me!!
           </Link>
         </div>

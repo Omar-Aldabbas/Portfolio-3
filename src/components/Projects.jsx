@@ -73,7 +73,7 @@ export const Projects = ({ limit }) => {
         </div>
 
         {limit && (
-          <Link href="/projects" className="view-all" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <Link to="/projects" className="view-all" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             view all <ArrowRightIcon size={20} />
           </Link>
         )}

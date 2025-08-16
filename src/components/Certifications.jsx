@@ -75,7 +75,7 @@ export const Certifications = ({ limit }) => {
 
         {limit && (
           <Link
-            href="/certifications"
+            to="/certifications"
             className="view-all"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
