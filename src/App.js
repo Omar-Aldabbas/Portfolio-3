@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import { ShapesBackground } from "./components/ShapesBackground";
 import { Home } from "./pages/Home";
@@ -13,7 +13,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ShapesBackground />
       <ScrollToTop />
       <Navbar />
@@ -26,8 +26,9 @@ function App() {
       </Routes>
       <Toaster position="top-center" reverseOrder={false} />
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
 export default App;
+

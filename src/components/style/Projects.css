@@ -3,8 +3,7 @@ section#projects {
   background-color:  var(--pro);
   color: var(--foreground);
   /* min-width: 1200px; */
-  overflow: hidden;
-  
+  /* overflow: hidden; */
 }
 
 .projects-header {
@@ -55,7 +54,7 @@ section#projects {
 
 .projects-wrapper {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0 2rem;
 }
 
