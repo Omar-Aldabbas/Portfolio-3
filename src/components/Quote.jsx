@@ -1,13 +1,13 @@
-import "./style/Quate.css";
+import "./style/Quote.css";
 
-export const Quate = () => {
+export const Quote = () => {
   return (
     <section className="idk">
       <div className="quote-section">
         <p className="quote-text">
-          With great power comes great electricity bill
+          Simplicity is the soul of efficiency.
         </p>
-        <p className="quote-author">Dr.Who</p>
+        <p className="quote-author">Austin Freeman</p>
       </div>
     </section>
   );

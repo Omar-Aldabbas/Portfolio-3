@@ -2,7 +2,7 @@ import { About } from "../components/About"
 import { Contact } from "../components/Contact"
 import { Hero } from "../components/Hero"
 import { Projects } from "../components/Projects"
-import { Quate } from "../components/Quate"
+import { Quote } from "../components/Quote"
 import { Skills } from "../components/Skills"
 
 export const Home = () => {
@@ -14,7 +14,7 @@ export const Home = () => {
         {/* <ThemeToggle /> */}
       {/* hero */}
         <Hero/>
-        <Quate/>
+        <Quote/>
       {/* projects */}
         <Projects limit={3}/>
       {/* skills */}
