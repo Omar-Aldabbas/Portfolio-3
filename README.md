@@ -2,6 +2,11 @@
 
 A personal portfolio website built with **React** and **React Router**, showcasing projects, certifications, and contact information.
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://omar-aldabbas.github.io/Portfolio-3/#/)
+
+**Design inspired by:** [Figma Portfolio Template](https://www.figma.com/community/file/1164933568884615740/portfolio)
+
+
 ## Table of Contents
 
 - [About](#about)  
